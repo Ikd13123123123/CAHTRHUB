@@ -19,7 +19,7 @@ local placesRepo = "https://raw.githubusercontent.com/Ikd13123123123/CAHTRHUB/re
 
 for _, id in ipairs(validPlaceIds) do
     if game.PlaceId == id then
-        loadstring(game:HttpGet(placesRepo .. game.PlaceId .. ".lua"))()
+        loadstring(game:HttpGet(placesRepo .. game.PlaceId .. ""))()
         foundGame = true
         break
     end
